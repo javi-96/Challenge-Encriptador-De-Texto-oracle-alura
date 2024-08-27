@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="/assets/Logo.png" alt="Logo Alura">
+        <div class="texto" >
+            <h1>Encriptador de texto</h1>
+        </div>
+    </header>
+    <main>
+        <img class="imagen_1" src="assets/img-1.1.png" alt="">
+        <section>
+            <textarea id="textoIngresado" class="ingresarTexto" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+            </div>
+            <div class="cajaBotones" >
+                <button onclick="btnEncriptar();" class="botonEncriptar">Encriptar</button>
+                <button onclick="btnDesencriptar();" class="botonDesencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea id="textoRecibido" class="recibirTexto" placeholder="Texto no encontrado"></textarea>
+            <div>
+                <button id="textoCopiado" onclick="btnCopiar()" class="botonCopiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <P>Desarrollado por Javier Choque</P>
+    </footer>
+    <script src="app.js"> </script>
+</body>
+</html>

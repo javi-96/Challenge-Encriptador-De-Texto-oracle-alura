@@ -1,0 +1,137 @@
+:root{
+    --color-1:#c3b3a6;
+    --color-2:#ffffff;
+    --color-3:#b4916b;
+    --color-4:#d4b27d;
+}
+
+* {
+    background: var(--color-1);
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.logo {
+    padding: 2% 0 0% 0%;
+}
+
+.texto {  
+    padding: 0 10rem 4rem;
+    font-size: 1.2rem;
+}
+
+main {
+    display:flex
+}
+
+.ingresarTexto {
+    width: 31.25rem;
+    height: 40rem;
+    font-size: 1.87rem;
+    padding: 15px;
+    border: none;
+    resize: none;
+    outline: none;
+    text-transform: lowercase;
+}
+
+.recibirTexto {
+    background-color: var(--color-2);
+    width: 31.25rem;
+    height: 41rem;
+    font-size: 1.87rem;
+    padding: 15px;
+    resize: none;
+    outline: none;
+    border-radius: 15px;
+    text-transform: lowercase;    
+}
+
+.informacion {
+    font-size: 1rem;
+    color: #495057;
+
+}
+
+.cajaBoton {
+    display: flex;
+    margin: 0 0 0 37.5rem;
+    gap: 12.5rem;
+}
+
+.botonEncriptar {
+    font-size: 1.56rem;
+    padding: 1.87rem 2.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-3);
+}
+
+.botonDesencriptar {
+    font-size: 1.56rem;
+    padding: 1.87rem 2.5rem;
+    border-radius: 1.25rem; 
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-3); 
+}
+
+.botonCopiar {
+    font-size: 1.56rem;
+    padding: 1.87rem 2.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--color-3); 
+}
+
+.imagen_1 {
+    height: 43.75rem;
+    
+}
+
+.botonEncriptar:hover {
+    background-color: var(--color-4);
+}
+
+.botonDesencriptar:hover {
+    background-color: var(--color-4);
+}
+
+.botonCopiar:hover {
+    background-color: var(--color-4);
+}
+
+footer {
+    margin: 0.3rem 0;
+    padding: 1.25rem 1rem;
+    text-align: start;
+    font-size: 1.25rem;
+    background-color: var(--color-3);
+}
+
+p{
+    background-color: var(--color-3);
+}
+
+@media (max-width: 1200px) {
+
+    .header{
+        padding: 10%;
+    }
+
+    .header_menu {
+        justify-content: center;
+    }
+
+    .presentacion {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .presentacion_contenido {
+        width: auto;
+    }
+}
